@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
-
+// next parameter gives the user the ability to continue
+// in middleware, the next parameter will move the user to the next part of the function after authorization
 export const verifyToken = async (req, res, next) => {
   try {
     let token = req.header("Authorization");

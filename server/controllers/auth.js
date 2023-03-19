@@ -44,7 +44,8 @@ export const register = async (req, res) => {
 
 };
 
-// logging in
+// logging in setup mock 
+// using mongoose to find the one with specificed email
 
 export const login = async (req, res) => {
     try {

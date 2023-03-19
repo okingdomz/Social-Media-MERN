@@ -8,7 +8,9 @@ import { verifyToken } from "../middleware/auth.js";
 
 const router = express.Router();
 
-/* READ */
+/* READ */ 
+// read part of CRUD-> create, read, update, delete
+// route.get calls database from strings to grab a particular id
 router.get("/:id", verifyToken, getUser);
 router.get("/:id/friends", verifyToken, getUserFriends);
 
